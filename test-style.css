@@ -21,6 +21,11 @@ body{
     overflow: auto;
 }
 
+.navbar{
+    top:0%;
+    padding: -20px;
+}
+
 nav{
     display: flex;
     width: 100%;
@@ -29,6 +34,7 @@ nav{
     padding: 5px 0;
     background-color: #523A28;
 }
+
 .nav_header{
     padding-right: 5%;
     padding-left: 5%;
@@ -149,6 +155,7 @@ a::after{
 }
 
 .menu-title{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -157,7 +164,6 @@ a::after{
 
     color: #523A28;
     background-color: #E4D4C8;
-    position: absolute;
     margin-top: 2%;
     margin-right: 0%;
     padding: 1% 8%;
@@ -174,11 +180,75 @@ a::after{
     padding-top: 10px;
 }
 
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.menu-course-set{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.menu-item{
+    font-family: 'Alegreya Sans', 'sans-serif';
+    position: relative;
+    width: 50%;
+}
+
+.menu-item-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #523a28b6;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+.menu-item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.menu-item-text {
+    font-family: 'Alegreya Sans', 'sans-serif';
+    color: #E4D4C8;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-course{
+    text-align: center;
+    color: #523A28;
+    font-family: "Adamina", 'serif';
+    font-weight: 100;
+    font-size: 70px;
+    padding: 4% 0%;
+    background-color: #D0B49F;
+}
+
 .footer{
     padding: 5px 0;
     text-align:justify;
     height: max-content;
-    position: fixed;
+    position: static;
     right: auto;
     bottom: 0%;
     display: flex;
@@ -232,6 +302,5 @@ a.nav_footer-link{
     font-family: 'poppins', sans-serif;
 
     color: #cacaca;
-    position: fixed;
     text-align: center;
 }
