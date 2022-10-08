@@ -13,7 +13,8 @@ body{
 }
 
 .navbar{
-    position:sticky;
+    z-index: 1;
+    position: sticky;
     top:0%;
     padding: -20px;
 }
@@ -165,7 +166,6 @@ a::after{
 
     color: #523A28;
     background-color: #E4D4C8;
-    position: absolute;
     margin-top: 2%;
     margin-right: 0%;
     padding: 1% 8%;
@@ -180,6 +180,69 @@ a::after{
     font-family: 'Alegreya Sans', 'sans-serif';
     font-size: 20px;
     padding-top: 10px;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.menu-course-set{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.menu-item{
+    font-family: 'Alegreya Sans', 'sans-serif';
+    width: 50%;
+}
+
+.menu-item-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.menu-item .overlay {
+    position: relative;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: #523a28b6;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+.menu-item:hover .overlay {
+    top: -100%;
+    height: 100%;
+}
+
+.menu-item-text {
+    font-family: 'Alegreya Sans', 'sans-serif';
+    color: #E4D4C8;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-course{
+    text-align: center;
+    color: #523A28;
+    font-family: "Adamina", 'serif';
+    font-weight: 100;
+    font-size: 70px;
+    padding: 4% 0%;
+    background-color: #D0B49F;
 }
 
 .footer{
@@ -240,7 +303,6 @@ a.nav_footer-link{
     font-family: 'poppins', sans-serif;
 
     color: #cacaca;
-    position: fixed;
     text-align: center;
 }
 
@@ -284,14 +346,16 @@ a.nav_footer-link{
     display: flex;
     width: 100%;
     height: 300px;
-    
+    padding-bottom: 2%;
+
     }
 
 .user1{
     display: flex;
     width: 100%;
     height: 300px;
-    }
+    padding-bottom: 2%;
+}
 
 
 .image{
@@ -302,7 +366,7 @@ a.nav_footer-link{
 
 .content-data{
     padding-left:50px;
-    background-color: #555;
+    background-color: #523A28;
     }
 
 .content-data h2{
@@ -314,9 +378,16 @@ a.nav_footer-link{
 }
 
 .mot {
-    text-align: center;
-    font-family: "Papyrus", "Copperplate", fantasy;
-    letter-spacing: 2rem;
+    color: #523A28;
+    background-color: #E4D4C8;
+    margin-top: 2%;
+    margin-right: 0%;
+    padding: 1% 8%;
+
+    font-family: 'Prata', 'serif';
+
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .meet{
@@ -338,7 +409,6 @@ a.nav_footer-link{
 }
 .contactus{ 
     scroll-behavior: auto;
-        position: relative;
     width: 100%;
     padding: 40px 100px;
     scroll-behavior: smooth;
@@ -408,7 +478,7 @@ grid-area: info;
   } 
 
 .Contact-info{
-    
+    max-width: 400px;
 }
 .Contact-info h2{
     background-color: #523A28;
@@ -419,7 +489,6 @@ grid-area: info;
 
 
 .box{
-position: relative;
 display: grid;
 grid-template-columns: 2fr 1fr;
 grid-template-rows: 5fr 4fr;
@@ -437,7 +506,6 @@ margin-bottom: 10px;
 }
 
 .formBox{
-position: relative;
 width: 100%;
 }
 
@@ -498,6 +566,9 @@ color: #999
 }
 
 .infobox{
-    padding: auto;
+    padding: 0%;
+}
 
+.sidebar{
+    padding: 3%;
 }
