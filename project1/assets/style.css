@@ -16,7 +16,6 @@ body{
     z-index: 1;
     position: sticky;
     top:0%;
-    padding: -20px;
 }
 
 nav{
@@ -136,8 +135,6 @@ a::after{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2%;
-    margin-left: center;
-
     text-align: center;
 }
 
