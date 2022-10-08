@@ -8,7 +8,7 @@ body{
     overflow: auto;
     background-size: 100%;
     background-color: #523A28;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(images/lineart\ \(1\).svg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),transparent),url(../assets/media/lineart\ \(1\).svg);
     background-attachment: fixed;
 }
 
@@ -109,7 +109,7 @@ a::after{
     text-align: center;
     color: transparent;
     -webkit-text-stroke: 1px #E4D4C8;
-    background: url(images/back.png);
+    background: url(../assets/media/back.png);
     -webkit-background-clip: text ;
     background-position: 0,0;
     animation: back 20s linear infinite;
@@ -393,7 +393,6 @@ a.nav_footer-link{
 .meet{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),transparent), url(images/motbg.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 0%;
